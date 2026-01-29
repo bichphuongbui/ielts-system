@@ -1,5 +1,5 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import { Homepage } from '../pages/publicPage';
+import { Homepage, About } from '../pages/publicPage';
 import { Register } from '../pages/auth';
 
 // Tạo router với các routes
@@ -7,6 +7,10 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: <Homepage />,
+  },
+  {
+    path: '/about',
+    element: <About />,
   },
   {
     path: '/register',
