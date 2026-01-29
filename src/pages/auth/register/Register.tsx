@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Header } from '../../../components/common';
+import { Header, Footer } from '../../../components/common';
 import { IoEyeSharp, IoEyeOffSharp, IoRocketSharp } from 'react-icons/io5';
 
 import './Register.css';
@@ -139,6 +139,7 @@ const Register: React.FC = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
