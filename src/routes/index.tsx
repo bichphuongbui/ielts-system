@@ -1,6 +1,6 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { Homepage, About } from '../pages/publicPage';
-import { Register } from '../pages/auth';
+import { Register, Login } from '../pages/auth';
 
 // Tạo router với các routes
 const router = createBrowserRouter([
@@ -16,11 +16,11 @@ const router = createBrowserRouter([
     path: '/register',
     element: <Register />,
   },
+  {
+    path: '/login',
+    element: <Login />,
+  },
   // Các route khác sẽ thêm vào đây
-  // {
-  //   path: '/login',
-  //   element: <Login />,
-  // },
   // {
   //   path: '/dashboard',
   //   element: <Dashboard />,
