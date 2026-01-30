@@ -16,6 +16,10 @@ const Homepage: React.FC = () => {
     window.open('https://zalo.me/0919510596', '_blank');
   };
 
+  const handleAboutClick = () => {
+    navigate('/about');
+  };
+
   return (
     <div className="homepage">
       <Header />
@@ -111,7 +115,7 @@ const Homepage: React.FC = () => {
             </div>
 
             <div className="about-action">
-              <button className="btn-about">Xem Thêm</button>
+              <button className="btn-about" onClick={handleAboutClick}>Xem Thêm</button>
             </div>
           </div>
         </div>
